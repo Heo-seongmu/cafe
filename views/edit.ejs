@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head><meta charset="UTF-8"><title>메뉴 수정</title></head>
+<body>
+  <h1>메뉴 수정</h1>
+  <form action="/edit/<%= menu.id %>" method="post">
+    <input name="name" value="<%= menu.name %>" required>
+    <input name="price" type="number" value="<%= menu.price %>" required>
+    <input name="category" value="<%= menu.category %>">
+    <button>저장</button>
+    <a href="/">취소</a>
+  </form>
+</body>
+</html>
